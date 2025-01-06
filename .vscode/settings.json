@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "esa.C": "cpp"
+        "esa.C": "cpp",
+        "esb.C": "cpp"
     }
 }
