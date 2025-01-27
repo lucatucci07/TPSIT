@@ -1,42 +1,22 @@
-class rettangolo{
-    private int altezza;
-    private int larghezza;
-    private int Area;
- 
-    public int Area () {
-        return altezza*larghezza;
+class Rettangolo {
+    private int altezza, larghezza;
+
+    public int Area() {
+        return altezza * larghezza;
     }
 
+    public int getAltezza() { return altezza; }
+    public void setAltezza(int altezza) { this.altezza = altezza; }
+
+    public int getLarghezza() { return larghezza; }
+    public void setLarghezza(int larghezza) { this.larghezza = larghezza; }
 }
 
 public class esa {
-    public static void main (String[]args)  {
-
-        public getaltezza() {
-            return altezza;
-        }
-        public void setaltezza(int altezza) {
-        this.altezza = altezza;
-        }
-
-
-
-         public getlarghezza() {
-            return larghezza;
-        }
-        public void setlarghezza(int larghezza) {
-        this.larghezza = larghezza;
-        }
-
-        public int getArea() {
-        return Area;
-
-         public void setArea(int Area) {
-        if (Area > 0) { 
-            this.Area = Area;
-        } else {
-            System.out.println("Errore: l'area non può essere negativa!");
-        }
-    }
+    public static void main(String[] args) {
+        Rettangolo r = new Rettangolo();
+        r.setAltezza(5);
+        r.setLarghezza(10);
+        System.out.println("L'area del rettangolo è: " + r.Area());
     }
 }
