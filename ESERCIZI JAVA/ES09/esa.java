@@ -1,22 +1,22 @@
 abstract class Animale {
-    abstract void emettiVerso();
+    abstract void Verso();
     
-    void dormi() {
-        System.out.println("zzz");
+    void dorme() {
+        System.out.println("zzzzzz");
     }
 }
 
 class Cane extends Animale {
     @Override
-    void emettiVerso() {
-        System.out.println("Bau");
+    void Verso() {
+        System.out.println("bau bau");
     }
 }
 
 class Gatto extends Animale {
     @Override
-    void emettiVerso() {
-        System.out.println("Miao");
+    void Verso() {
+        System.out.println("miao miao");
     }
 }
 
@@ -25,7 +25,7 @@ public class esa {
         Animale[] animali = {new Cane(), new Gatto()};
 
         for (Animale animale : animali) {
-            animale.emettiVerso();
+            animale.Verso();
         }
     }
 }

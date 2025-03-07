@@ -1,40 +1,40 @@
 abstract class Forma {
-    abstract double calcolaArea();
+    abstract double Area();
 }
 
 class Cerchio extends Forma {
-    private double raggio;
+    private double r;
 
-    Cerchio(double raggio) {
-        this.raggio = raggio;
+    Cerchio(double r) {
+        this.r = r;
     }
 
     @Override
-    double calcolaArea() {
-        return Math.PI * raggio * raggio;
+    double Area() {
+        return Math.PI * r * r;
     }
 }
 
-class Rettangolo extends Forma {
-    private double base, altezza;
+class Rett extends Forma {
+    private double b, h;
 
-    Rettangolo(double base, double altezza) {
-        this.base = base;
-        this.altezza = altezza;
+    Rett(double b, double h) {
+        this.b = b;
+        this.h = h;
     }
 
     @Override
-    double calcolaArea() {
-        return base * altezza;
+    double Area() {
+        return b * h;
     }
 }
 
 public class esb {
     public static void main(String[] args) {
-        Forma[] forme = {new Cerchio(30), new Rettangolo(8, 9)};
+        Forma[] forme = {new Cerchio(30), new Rett(8, 9)};
 
         for (Forma forma : forme) {
-            System.out.println("area: " + forma.calcolaArea());
+            System.out.println("area della figura: " + forma.Area());
         }
     }
 }
